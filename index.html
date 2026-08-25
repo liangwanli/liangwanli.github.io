@@ -22,8 +22,10 @@
         <a class="site-name" href="#about">Xiaocong Pan</a>
         <nav class="top-nav" id="top-nav" aria-label="主导航">
           <a href="#about" data-copy="navAbout">关于</a>
-          <a href="#education" data-copy="navEducation">教育</a>
+          <a href="#news" data-copy="navNews">动态</a>
+          <a href="#publications" data-copy="navPublications">论文</a>
           <a href="#projects" data-copy="navProjects">项目</a>
+          <a href="#competitions" data-copy="navCompetitions">竞赛</a>
           <a href="#awards" data-copy="navAwards">荣誉</a>
         </nav>
         <div class="lang-switch" aria-label="语言切换">
@@ -74,8 +76,38 @@
               </div>
             </section>
 
-            <section id="education" class="section">
+            <section id="news" class="section news">
+              <div class="section-heading">
+                <h2 class="section-title" data-copy="newsTitle">最新动态</h2>
+              </div>
+              <ul class="news-list">
+                <li class="news-item news-highlight">
+                  <time datetime="2026-07-19" class="news-date">2026.07.19</time>
+                  <div class="news-copy">
+                    <strong data-copy="newsCompetition">🎉 获得中国大学生计算机设计大赛人工智能应用赛道国家级二等奖。</strong>
+                  </div>
+                </li>
+                <li class="news-item">
+                  <time datetime="2026" class="news-date">2026</time>
+                  <div class="news-copy" data-copy="newsPaper">论文 <em>MSM-Unet</em> 被 IEEE 会议 CITSC 2026 录用（第一作者）。</div>
+                </li>
+              </ul>
+            </section>
+
+            <section id="publications" class="section">
               <img class="section-sticker publication-sticker" src="assets/sticker-curious.gif" alt="好奇猫咪贴纸" />
+              <h2 class="section-title" data-copy="publicationsTitle">论文成果</h2>
+              <article class="publication featured-publication">
+                <div class="pub-content">
+                  <p class="pub-title">MSM-Unet: A Mamba-Driven Multi-Scale Pyramid for Medical Image Segmentation</p>
+                  <div class="pub-venue"><span class="pub-venue-tag">IEEE CITSC 2026</span><span class="publication-status" data-copy="accepted">已录用</span></div>
+                  <div class="pub-authors"><strong class="author-highlight">Xiaocong Pan</strong> <span data-copy="firstAuthor">（第一作者）</span></div>
+                  <p class="pub-desc" data-copy="paperDescription">针对医学图像病灶尺度差异大、形态不规则以及编解码器语义差异问题，提出 MSM-Unet：使用多尺度 Mamba 模块联合建模局部细节和长程依赖，并通过增强型跳跃连接融合浅层边缘与深层语义特征。在 BraTS 数据集上，WT、TC、ET 分割指标均优于 TransUNet 和基准 Mamba 模型。</p>
+                </div>
+              </article>
+            </section>
+
+            <section id="education" class="section">
               <h2 class="section-title" data-copy="educationTitle">教育经历</h2>
               <ul class="project-list timeline">
                 <li class="project-item">
@@ -104,9 +136,9 @@
                   <p class="project-description" data-copy="project2">针对复杂养殖环境中的稠密鱼苗计数，完成数据准备、检测模型训练与计数结果分析。</p>
                 </li>
                 <li class="project-item">
-                  <span class="timeline-time">U-Net · Medical Imaging</span>
-                  <p class="entry-title">Brain Tumor Segmentation with U-Net</p>
-                  <p class="project-description" data-copy="project3">探索 MRI 脑肿瘤区域分割方法，覆盖图像预处理、网络实现、指标评估和结果可视化。</p>
+                  <span class="timeline-time">Mamba · U-Net · Medical Imaging</span>
+                  <p class="entry-title">MSM-Unet for Medical Image Segmentation</p>
+                  <p class="project-description" data-copy="project3">提出多尺度 Mamba 模块和增强型跳跃连接，在 BraTS 数据集上开展脑肿瘤分割实验；相关论文已被 IEEE CITSC 2026 录用，本人为第一作者。</p>
                 </li>
                 <li class="project-item">
                   <span class="timeline-time">Contrastive Learning · Reliability</span>
@@ -118,6 +150,18 @@
                   <p class="entry-title">Rice Disease Detection with Deformable Convolution</p>
                   <p class="project-description" data-copy="project5">使用可变形卷积增强水稻病害特征提取，参与骨干网络修改、消融实验和检测结果分析。</p>
                 </li>
+              </ul>
+            </section>
+
+            <section id="competitions" class="section">
+              <img class="section-sticker project-sticker" src="assets/sticker-flowers.gif" alt="花朵庆祝贴纸" />
+              <h2 class="section-title" data-copy="competitionsTitle">竞赛经历</h2>
+              <ul class="competition-list">
+                <li class="competition-item"><div><p data-copy="competition1">中国大学生计算机设计大赛 · 人工智能应用赛道</p><time datetime="2026-07-19">2026.07.19</time></div><strong data-copy="nationalSecond">国家级二等奖</strong></li>
+                <li class="competition-item"><div><p data-copy="competition2">“AI for Science”大湾区杯科技竞赛</p></div><strong data-copy="nationalSecond">国家级二等奖</strong></li>
+                <li class="competition-item"><div><p data-copy="competition3">蓝桥杯全国软件和信息技术大赛软件赛</p></div><strong data-copy="nationalThird">国家级三等奖</strong></li>
+                <li class="competition-item"><div><p data-copy="competition4">中国机器人及人工智能大赛</p></div><strong data-copy="nationalThird">国家级三等奖</strong></li>
+                <li class="competition-item"><div><p data-copy="competition5">全国大学生数学建模竞赛</p></div><strong data-copy="provincialSecond">省级二等奖</strong></li>
               </ul>
             </section>
 
