@@ -18,7 +18,7 @@
       project4: "研究深度神经网络的置信度校准，开展损失设计探索与实验对比，以提升预测可信度。",
       project5: "使用可变形卷积增强水稻病害特征提取，参与骨干网络修改、消融实验和检测结果分析。",
       competitionsTitle: "竞赛经历", competition1: "中国大学生计算机设计大赛 · 人工智能应用赛道", competition2: "“AI for Science”大湾区杯科技竞赛", competition3: "蓝桥杯全国软件和信息技术大赛软件赛", competition4: "中国机器人及人工智能大赛", competition5: "全国大学生数学建模竞赛", nationalSecond: "国家级二等奖", nationalThird: "国家级三等奖", provincialSecond: "省级二等奖",
-      awardsTitle: "奖励荣誉", award1: "国家奖学金", award2: "丁颖奖学金", award3: "国家励志奖学金", footer: "使用 HTML、CSS 与 JavaScript 构建"
+      awardsTitle: "奖励荣誉", award1: "国家奖学金", topOnePercent: "前 1%", award2: "丁颖奖学金", award3: "国家励志奖学金", footer: "使用 HTML、CSS 与 JavaScript 构建"
     },
     en: {
       pageTitle: "Xiaocong Pan | Academic Homepage", navAbout: "About", navNews: "News", navPublications: "Publications", navProjects: "Projects", navCompetitions: "Competitions", navAwards: "Awards", menu: "Menu",
@@ -36,7 +36,7 @@
       project4: "Investigated contrastive-learning-based calibration strategies to improve confidence reliability in deep neural networks.",
       project5: "Applied deformable convolution to rice disease detection, including backbone modification, ablation studies, and result analysis.",
       competitionsTitle: "Competitions", competition1: "Chinese Collegiate Computing Competition · AI Application Track", competition2: "AI for Science Greater Bay Area Cup", competition3: "Lanqiao Cup National Software and Information Technology Competition", competition4: "China Robot and Artificial Intelligence Competition", competition5: "China Undergraduate Mathematical Contest in Modeling", nationalSecond: "National Second Prize", nationalThird: "National Third Prize", provincialSecond: "Provincial Second Prize",
-      awardsTitle: "Awards", award1: "National Scholarship", award2: "Ding Ying Scholarship", award3: "National Encouragement Scholarship", footer: "Built with HTML, CSS & JavaScript"
+      awardsTitle: "Awards", award1: "National Scholarship", topOnePercent: "Top 1%", award2: "Ding Ying Scholarship", award3: "National Encouragement Scholarship", footer: "Built with HTML, CSS & JavaScript"
     }
   };
 

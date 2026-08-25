@@ -1435,7 +1435,25 @@ body.scrapbook-theme::before {
 /* News, publication, and competition additions */
 .scrapbook-theme .top-nav { gap: 1.25rem; }
 .scrapbook-theme .news-highlight { border-left: 3px solid #d5a54a; padding-left: 12px; background: linear-gradient(90deg, rgba(255, 244, 214, 0.65), transparent 75%); }
-.scrapbook-theme .featured-publication { border-left: 4px solid #6b4f8a; }
+.scrapbook-theme .featured-publication {
+  display: block;
+  grid-template-columns: minmax(0, 1fr);
+  width: 100%;
+  margin: 0;
+  padding: 22px 24px;
+  border: 1px solid rgba(123, 94, 167, .2);
+  border-left: 4px solid #6b4f8a;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(123, 94, 167, .06), rgba(255, 255, 255, .96) 48%);
+  box-shadow: 0 10px 28px rgba(45, 32, 64, .06);
+}
+.scrapbook-theme .featured-publication:last-child { border-bottom: 1px solid rgba(123, 94, 167, .2); }
+.scrapbook-theme .featured-publication:hover { border-color: rgba(123, 94, 167, .34); box-shadow: 0 14px 34px rgba(45, 32, 64, .09); }
+.scrapbook-theme .featured-publication .pub-content { width: 100%; }
+.scrapbook-theme .featured-publication .pub-title { margin-bottom: 12px; font-size: clamp(1.02rem, 2vw, 1.18rem); line-height: 1.48; text-align: left; overflow-wrap: anywhere; }
+.scrapbook-theme .featured-publication .pub-venue { display: flex; align-items: center; gap: 9px; margin: 0 0 10px; font-style: normal; }
+.scrapbook-theme .featured-publication .pub-authors { margin: 0 0 12px; text-align: left; }
+.scrapbook-theme .featured-publication .pub-desc { margin: 0; color: #5f536c; font-style: normal; line-height: 1.75; text-align: left; }
 .scrapbook-theme .publication-status { display: inline-flex; align-items: center; border-radius: 999px; background: #e9f7ee; color: #267346; padding: 2px 9px; font-size: 0.78rem; font-weight: 700; }
 .scrapbook-theme .competition-list { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
 .scrapbook-theme .competition-item { display: flex; align-items: center; justify-content: space-between; gap: 24px; border: 1px solid var(--border); border-radius: 9px; background: #fff; padding: 14px 16px; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
@@ -1443,7 +1461,10 @@ body.scrapbook-theme::before {
 .scrapbook-theme .competition-item p { margin: 0; color: var(--text); font-weight: 600; }
 .scrapbook-theme .competition-item time { display: block; margin-top: 3px; color: var(--muted); font-size: .78rem; }
 .scrapbook-theme .competition-item strong { flex: 0 0 auto; border-radius: 999px; background: rgba(123, 94, 167, .09); color: #6b4f8a; padding: 4px 10px; font-size: .8rem; white-space: nowrap; }
+.scrapbook-theme .award-featured { justify-content: space-between; border-color: rgba(213, 165, 74, .38); background: linear-gradient(90deg, rgba(255, 244, 214, .7), #fff 70%); }
+.scrapbook-theme .award-featured strong { margin-left: auto; border-radius: 999px; background: #fff0bf; color: #805f16; padding: 3px 10px; font-size: .78rem; white-space: nowrap; }
 
 @media (max-width: 720px) {
   .scrapbook-theme .competition-item { align-items: flex-start; flex-direction: column; gap: 8px; }
+  .scrapbook-theme .featured-publication { padding: 18px 16px; }
 }
