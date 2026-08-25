@@ -1,11 +1,11 @@
 {
   "mouseover": [
-    { "selector": ".site-name", "text": "这是冠宇的学术主页哦~" },
+    { "selector": ".site-name", "text": "这是晓枞的学术主页哦~" },
     { "selector": ".nav-link[data-page='intro']", "text": "回到封面页看看那只可爱的猫咪吧~" },
-    { "selector": ".nav-link[data-page='home']", "text": "这里展示了冠宇的学术经历和研究成果~" },
+    { "selector": ".nav-link[data-page='home']", "text": "这里展示了晓枞的学术经历和研究项目~" },
     { "selector": ".nav-link[data-page='blog']", "text": "博客里记录了一些技术思考和研究笔记~" },
-    { "selector": ".profile-name", "text": "朱冠宇，华南农业大学在读本科生~" },
-    { "selector": ".profile-tag", "text": "这些是冠宇的主要研究方向~" },
+    { "selector": ".profile-name", "text": "潘晓枞，华南农业大学人工智能专业本科生~" },
+    { "selector": ".profile-tag", "text": "这些是晓枞的主要研究方向~" },
     { "selector": ".section-title", "text": "每个板块都凝聚了不少心血呢~" },
     { "selector": ".pub-venue-tag", "text": "CCF-A、中科院一区，都是顶会顶刊哦~" },
     { "selector": ".blog-card", "text": "点击就可以阅读完整的博客文章~" },
@@ -13,7 +13,7 @@
     { "selector": ".lang-btn", "text": "可以切换中英文哦~" },
     { "selector": ".award-item", "text": "努力终会有回报的~" },
     { "selector": ".intro-nav a", "text": "探索这个网站的不同页面~" },
-    { "selector": ".intro-name", "text": "GUANYU ZHU — 这是我的主人~" },
+    { "selector": ".intro-name", "text": "XIAOCONG PAN — 这是我的主人~" },
     { "selector": ".cat-stage", "text": "那是我的猫咪朋友，在上面好可爱~" }
   ],
   "click": [],
@@ -33,7 +33,7 @@
     { "hour": 22, "text": "夜深了，早点休息吧，熬夜对身体不好~" }
   ],
   "message": {
-    "default": "欢迎来到冠宇的学术主页~",
+    "default": "欢迎来到晓枞的学术主页~",
     "console": "嘿，你打开了控制台，是同行吧？欢迎交流~",
     "copy": "复制了什么呢？要注意版权哦~",
     "visibilitychange": "你离开了一下，我还以为你走了呢~",

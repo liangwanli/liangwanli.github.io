@@ -1422,3 +1422,12 @@ body.scrapbook-theme::before {
     white-space: normal;
   }
 }
+/* Xiaocong Pan profile content */
+.scrapbook-theme .profile-name-cn { margin-top: 3px; color: #826f94; font-size: 0.95rem; letter-spacing: 0.14em; }
+.scrapbook-theme .profile-note { margin-top: 14px; color: #826f94; font-size: 0.82rem; text-align: center; }
+.scrapbook-theme .interest-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+.scrapbook-theme .interest-tags span { border: 1px solid rgba(123, 94, 167, 0.24); border-radius: 999px; background: rgba(123, 94, 167, 0.08); color: #6b4f8a; padding: 5px 11px; font-family: "Space Grotesk", "Noto Sans SC", sans-serif; font-size: 0.78rem; }
+.scrapbook-theme .section-intro, .scrapbook-theme .project-description { color: #6f617c; font-size: 0.9rem; line-height: 1.7; }
+.scrapbook-theme .section-intro { margin: -10px 0 22px; }
+.scrapbook-theme .project-description { margin-top: 8px; }
+.scrapbook-theme .site-footer { margin-top: 56px; border-top: 1px dashed rgba(123, 94, 167, 0.28); padding: 28px 20px 36px; color: #826f94; font-family: "Space Grotesk", "Noto Sans SC", sans-serif; font-size: 0.82rem; text-align: center; }

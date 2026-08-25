@@ -1,11 +1,11 @@
 {
   "mouseover": [
-    { "selector": ".site-name", "text": "Welcome to Guanyu's academic homepage~" },
+    { "selector": ".site-name", "text": "Welcome to Xiaocong's academic homepage~" },
     { "selector": ".nav-link[data-page='intro']", "text": "Go back to the cover page and see that cute cat~" },
-    { "selector": ".nav-link[data-page='home']", "text": "Here you'll find Guanyu's academic journey and research~" },
+    { "selector": ".nav-link[data-page='home']", "text": "Here you'll find Xiaocong's academic journey and projects~" },
     { "selector": ".nav-link[data-page='blog']", "text": "The blog contains technical insights and research notes~" },
-    { "selector": ".profile-name", "text": "Guanyu Zhu, undergraduate at SCAU~" },
-    { "selector": ".profile-tag", "text": "These are Guanyu's main research interests~" },
+    { "selector": ".profile-name", "text": "Xiaocong Pan, an undergraduate at SCAU~" },
+    { "selector": ".profile-tag", "text": "These are Xiaocong's main research interests~" },
     { "selector": ".section-title", "text": "Each section represents a lot of hard work~" },
     { "selector": ".pub-venue-tag", "text": "CCF-A, CAS Q1 — top venues indeed~" },
     { "selector": ".blog-card", "text": "Click to read the full blog post~" },
@@ -13,7 +13,7 @@
     { "selector": ".lang-btn", "text": "Switch between Chinese and English~" },
     { "selector": ".award-item", "text": "Hard work always pays off~" },
     { "selector": ".intro-nav a", "text": "Explore different pages of this site~" },
-    { "selector": ".intro-name", "text": "GUANYU ZHU — that's my owner!" },
+    { "selector": ".intro-name", "text": "XIAOCONG PAN — that's my owner!" },
     { "selector": ".cat-stage", "text": "That's my fellow cat friend up there~" }
   ],
   "click": [],
@@ -33,7 +33,7 @@
     { "hour": 22, "text": "Getting late... don't stay up too late~" }
   ],
   "message": {
-    "default": "Welcome to Guanyu's academic homepage~",
+    "default": "Welcome to Xiaocong's academic homepage~",
     "console": "Hey, you opened the console! A fellow developer? Nice to meet you~",
     "copy": "Copied something? Mind the copyright~",
     "visibilitychange": "You left for a moment, I thought you were gone~",
