@@ -1,0 +1,22 @@
+node_modules/
+css/src/
+js/src/
+blog-posts/src/
+build.js
+package.json
+package-lock.json
+.DS_Store
+.claude/
+.superpowers/
+docs/
+widgets-preview/
+*.jpeg
+小猫图片/
+微信图片_*.jpg
+个人简历*.html
+/*简历*.pdf
+论文配图/
+Publications/ClinSeDT.pdf
+Publications/Latent_Reward_Steering_emnlp2026 (1).pdf
+猫*Google*.html
+猫*Google*_files/
