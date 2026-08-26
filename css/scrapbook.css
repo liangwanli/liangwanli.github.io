@@ -1427,6 +1427,7 @@ body.scrapbook-theme::before {
 .scrapbook-theme .profile-note { margin-top: 14px; color: #826f94; font-size: 0.82rem; text-align: center; }
 .scrapbook-theme .profile-sidebar .avatar { object-position: 32% 42%; }
 .scrapbook-theme .profile-links .profile-email::before { content: "✉" !important; }
+.scrapbook-theme .profile-links .orcid-link::before { content: "◎" !important; color: #a6ce39; font-size: 1.15rem; }
 .scrapbook-theme .profile-email a {
   padding: 0;
   border: 0;
