@@ -40,14 +40,14 @@
       <section id="home-page" class="page-section active">
         <div class="container academic-layout">
           <aside class="profile-sidebar" aria-label="个人信息">
-            <img class="avatar" src="assets/avatar.svg" alt="潘晓枞的头像占位图" />
+            <img class="avatar" src="assets/PICT.jpg" alt="Xiaocong Pan" />
             <h1 class="profile-name">Xiaocong Pan</h1>
-            <p class="profile-name-cn">潘晓枞</p>
-            <p class="sidebar-role" data-copy="identity">华南农业大学 · 人工智能</p>
+            <p class="sidebar-role" data-copy="identity">SCAU</p>
             <ul class="profile-links" aria-label="外部链接">
+              <li class="profile-email"><a href="mailto:xc_pan1213@163.com">xc_pan1213@163.com</a></li>
+              <li class="profile-email"><a href="mailto:2443852856@qq.com">2443852856@qq.com</a></li>
               <li class="github-link"><a href="https://github.com/liangwanli" target="_blank" rel="noreferrer">GitHub</a></li>
             </ul>
-            <p class="profile-note" data-copy="profileNote">本科生 · 2023 级</p>
             <img class="sidebar-sticker sidebar-sticker-bottom" src="assets/sticker-peek.gif" alt="探头猫咪贴纸" />
           </aside>
 
@@ -55,7 +55,7 @@
             <section id="about" class="section about visible">
               <div class="about-heading">
                 <h2 class="section-title" data-copy="aboutTitle">关于我</h2>
-                <span class="about-title-status" data-copy="aboutStatus">保持好奇，持续学习</span>
+                <span class="about-title-status" data-copy="aboutStatus">故事必须重新讲过</span>
               </div>
               <div class="about-shell">
                 <div class="about-art" aria-label="插画装饰">
@@ -98,11 +98,13 @@
               <img class="section-sticker publication-sticker" src="assets/sticker-curious.gif" alt="好奇猫咪贴纸" />
               <h2 class="section-title" data-copy="publicationsTitle">论文成果</h2>
               <article class="publication featured-publication">
+                <div class="entry-media-placeholder" aria-label="论文配图待补充"><span data-copy="paperFigurePending">论文配图待补充</span></div>
                 <div class="pub-content">
                   <p class="pub-title">MSM-Unet: A Mamba-Driven Multi-Scale Pyramid for Medical Image Segmentation</p>
                   <div class="pub-venue"><span class="pub-venue-tag">IEEE CITSC 2026</span><span class="publication-status" data-copy="accepted">已录用</span></div>
                   <div class="pub-authors"><strong class="author-highlight">Xiaocong Pan</strong> <span data-copy="firstAuthor">（第一作者）</span></div>
                   <p class="pub-desc" data-copy="paperDescription">针对医学图像病灶尺度差异大、形态不规则以及编解码器语义差异问题，提出 MSM-Unet：使用多尺度 Mamba 模块联合建模局部细节和长程依赖，并通过增强型跳跃连接融合浅层边缘与深层语义特征。在 BraTS 数据集上，WT、TC、ET 分割指标均优于 TransUNet 和基准 Mamba 模型。</p>
+                  <div class="entry-links"><span class="link-pending" data-copy="paperLinkPending">论文链接待公开后补充</span></div>
                 </div>
               </article>
             </section>
@@ -123,34 +125,24 @@
             <section id="projects" class="section">
               <img class="section-sticker project-sticker" src="assets/sticker-tired.gif" alt="努力学习猫咪贴纸" />
               <h2 class="section-title" data-copy="projectsTitle">代表项目</h2>
-              <p class="section-intro" data-copy="projectsIntro">以下内容依据旧主页整理；后续可补充项目时间、导师、数据集、量化结果、论文与代码链接。</p>
-              <ul class="project-list timeline">
-                <li class="project-item">
-                  <span class="timeline-time">Computer Vision · Agriculture</span>
-                  <p class="entry-title">YOLO-GSCN for Pepper Leaf Disease Detection</p>
-                  <p class="project-description" data-copy="project1">面向农业场景中的辣椒叶片病害识别，设计并训练目标检测流程，参与模型改进、实验设计与评估。</p>
-                </li>
-                <li class="project-item">
-                  <span class="timeline-time">YOLOv9 · Counting</span>
-                  <p class="entry-title">Intelligent Fish Fry Counting with YOLOv9</p>
-                  <p class="project-description" data-copy="project2">针对复杂养殖环境中的稠密鱼苗计数，完成数据准备、检测模型训练与计数结果分析。</p>
-                </li>
-                <li class="project-item">
-                  <span class="timeline-time">Mamba · U-Net · Medical Imaging</span>
-                  <p class="entry-title">MSM-Unet for Medical Image Segmentation</p>
-                  <p class="project-description" data-copy="project3">提出多尺度 Mamba 模块和增强型跳跃连接，在 BraTS 数据集上开展脑肿瘤分割实验；相关论文已被 IEEE CITSC 2026 录用，本人为第一作者。</p>
-                </li>
-                <li class="project-item">
-                  <span class="timeline-time">Contrastive Learning · Reliability</span>
-                  <p class="entry-title">Model Calibration with Contrastive Learning</p>
-                  <p class="project-description" data-copy="project4">研究深度神经网络的置信度校准，开展损失设计探索与实验对比，以提升预测可信度。</p>
-                </li>
-                <li class="project-item">
-                  <span class="timeline-time">Deformable Convolution · Agriculture</span>
-                  <p class="entry-title">Rice Disease Detection with Deformable Convolution</p>
-                  <p class="project-description" data-copy="project5">使用可变形卷积增强水稻病害特征提取，参与骨干网络修改、消融实验和检测结果分析。</p>
-                </li>
-              </ul>
+              <div class="project-showcase-list">
+                <article class="showcase-entry">
+                  <div class="entry-media-placeholder" aria-label="项目配图待补充"><span data-copy="projectFigurePending">项目配图待补充</span></div>
+                  <div class="showcase-content"><span class="entry-kicker">Computer Vision · Agriculture</span><h3>YOLO-GSCN for Pepper Leaf Disease Detection</h3><p data-copy="project1">面向农业场景中的辣椒叶片病害识别，设计并训练目标检测流程，参与模型改进、实验设计与评估。</p><div class="entry-links"><a href="https://github.com/liangwanli" target="_blank" rel="noreferrer">GitHub</a></div></div>
+                </article>
+                <article class="showcase-entry">
+                  <div class="entry-media-placeholder" aria-label="项目配图待补充"><span data-copy="projectFigurePending">项目配图待补充</span></div>
+                  <div class="showcase-content"><span class="entry-kicker">YOLOv9 · Counting</span><h3>Intelligent Fish Fry Counting with YOLOv9</h3><p data-copy="project2">针对复杂养殖环境中的稠密鱼苗计数，完成数据准备、检测模型训练与计数结果分析。</p><div class="entry-links"><a href="https://github.com/liangwanli" target="_blank" rel="noreferrer">GitHub</a></div></div>
+                </article>
+                <article class="showcase-entry">
+                  <div class="entry-media-placeholder" aria-label="项目配图待补充"><span data-copy="projectFigurePending">项目配图待补充</span></div>
+                  <div class="showcase-content"><span class="entry-kicker">Contrastive Learning · Reliability</span><h3>Model Calibration with Contrastive Learning</h3><p data-copy="project4">研究深度神经网络的置信度校准，开展损失设计探索与实验对比，以提升预测可信度。</p><div class="entry-links"><a href="https://github.com/liangwanli" target="_blank" rel="noreferrer">GitHub</a></div></div>
+                </article>
+                <article class="showcase-entry">
+                  <div class="entry-media-placeholder" aria-label="项目配图待补充"><span data-copy="projectFigurePending">项目配图待补充</span></div>
+                  <div class="showcase-content"><span class="entry-kicker">Deformable Convolution · Agriculture</span><h3>Rice Disease Detection with Deformable Convolution</h3><p data-copy="project5">使用可变形卷积增强水稻病害特征提取，参与骨干网络修改、消融实验和检测结果分析。</p><div class="entry-links"><a href="https://github.com/liangwanli" target="_blank" rel="noreferrer">GitHub</a></div></div>
+                </article>
+              </div>
             </section>
 
             <section id="competitions" class="section">

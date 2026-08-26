@@ -1425,6 +1425,9 @@ body.scrapbook-theme::before {
 /* Xiaocong Pan profile content */
 .scrapbook-theme .profile-name-cn { margin-top: 3px; color: #826f94; font-size: 0.95rem; letter-spacing: 0.14em; }
 .scrapbook-theme .profile-note { margin-top: 14px; color: #826f94; font-size: 0.82rem; text-align: center; }
+.scrapbook-theme .profile-sidebar .avatar { object-position: 32% 42%; }
+.scrapbook-theme .profile-links .profile-email::before { content: "✉" !important; }
+.scrapbook-theme .profile-email a { overflow-wrap: anywhere; }
 .scrapbook-theme .interest-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
 .scrapbook-theme .interest-tags span { border: 1px solid rgba(123, 94, 167, 0.24); border-radius: 999px; background: rgba(123, 94, 167, 0.08); color: #6b4f8a; padding: 5px 11px; font-family: "Space Grotesk", "Noto Sans SC", sans-serif; font-size: 0.78rem; }
 .scrapbook-theme .section-intro, .scrapbook-theme .project-description { color: #6f617c; font-size: 0.9rem; line-height: 1.7; }
@@ -1436,25 +1439,41 @@ body.scrapbook-theme::before {
 .scrapbook-theme .top-nav { gap: 1.25rem; }
 .scrapbook-theme .news-highlight { border-left: 3px solid #d5a54a; padding-left: 12px; background: linear-gradient(90deg, rgba(255, 244, 214, 0.65), transparent 75%); }
 .scrapbook-theme .featured-publication {
-  display: block;
-  grid-template-columns: minmax(0, 1fr);
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
   width: 100%;
   margin: 0;
-  padding: 22px 24px;
-  border: 1px solid rgba(123, 94, 167, .2);
-  border-left: 4px solid #6b4f8a;
-  border-radius: 12px;
-  background: linear-gradient(135deg, rgba(123, 94, 167, .06), rgba(255, 255, 255, .96) 48%);
-  box-shadow: 0 10px 28px rgba(45, 32, 64, .06);
+  padding: 18px 0;
+  border: 0;
+  border-bottom: 1px solid var(--border);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
 }
-.scrapbook-theme .featured-publication:last-child { border-bottom: 1px solid rgba(123, 94, 167, .2); }
-.scrapbook-theme .featured-publication:hover { border-color: rgba(123, 94, 167, .34); box-shadow: 0 14px 34px rgba(45, 32, 64, .09); }
+.scrapbook-theme .featured-publication:last-child { border-bottom: 0; }
+.scrapbook-theme .featured-publication:hover { border-color: var(--border); box-shadow: none; }
 .scrapbook-theme .featured-publication .pub-content { width: 100%; }
 .scrapbook-theme .featured-publication .pub-title { margin-bottom: 12px; font-size: clamp(1.02rem, 2vw, 1.18rem); line-height: 1.48; text-align: left; overflow-wrap: anywhere; }
 .scrapbook-theme .featured-publication .pub-venue { display: flex; align-items: center; gap: 9px; margin: 0 0 10px; font-style: normal; }
 .scrapbook-theme .featured-publication .pub-authors { margin: 0 0 12px; text-align: left; }
 .scrapbook-theme .featured-publication .pub-desc { margin: 0; color: #5f536c; font-style: normal; line-height: 1.75; text-align: left; }
 .scrapbook-theme .publication-status { display: inline-flex; align-items: center; border-radius: 999px; background: #e9f7ee; color: #267346; padding: 2px 9px; font-size: 0.78rem; font-weight: 700; }
+.scrapbook-theme .entry-media-placeholder { display: grid; place-items: center; width: 150px; min-height: 108px; border: 1px dashed #cbd2d9; border-radius: 5px; background: repeating-linear-gradient(135deg, #fafbfc 0, #fafbfc 10px, #f3f5f7 10px, #f3f5f7 20px); color: #8a949e; text-align: center; }
+.scrapbook-theme .entry-media-placeholder span { max-width: 110px; font-size: .76rem; line-height: 1.45; }
+.scrapbook-theme .entry-links { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+.scrapbook-theme .entry-links a, .scrapbook-theme .link-pending { display: inline-flex; align-items: center; min-height: 28px; border: 1px solid var(--border); border-radius: 999px; padding: 3px 11px; font-size: .78rem; font-weight: 700; }
+.scrapbook-theme .entry-links a:hover { border-color: #6b4f8a; text-decoration: none; }
+.scrapbook-theme .link-pending { color: var(--muted); font-weight: 500; }
+.scrapbook-theme .project-showcase-list { display: grid; }
+.scrapbook-theme .showcase-entry { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 24px; align-items: start; padding: 20px 0; border-bottom: 1px solid var(--border); }
+.scrapbook-theme .showcase-entry:first-child { padding-top: 0; }
+.scrapbook-theme .showcase-entry:last-child { border-bottom: 0; padding-bottom: 0; }
+.scrapbook-theme .showcase-content { min-width: 0; }
+.scrapbook-theme .entry-kicker { display: block; margin-bottom: 5px; color: var(--muted); font-size: .8rem; font-weight: 600; }
+.scrapbook-theme .showcase-content h3 { margin: 0 0 7px; color: var(--text); font-family: var(--sans); font-size: 1rem; line-height: 1.45; overflow-wrap: anywhere; }
+.scrapbook-theme .showcase-content p { margin: 0; color: #5f536c; font-size: .9rem; line-height: 1.7; }
 .scrapbook-theme .competition-list { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
 .scrapbook-theme .competition-item { display: flex; align-items: center; justify-content: space-between; gap: 24px; border: 1px solid var(--border); border-radius: 9px; background: #fff; padding: 14px 16px; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
 .scrapbook-theme .competition-item:hover { transform: translateY(-2px); border-color: rgba(123, 94, 167, .32); box-shadow: 0 8px 20px rgba(45, 32, 64, .07); }
@@ -1466,5 +1485,6 @@ body.scrapbook-theme::before {
 
 @media (max-width: 720px) {
   .scrapbook-theme .competition-item { align-items: flex-start; flex-direction: column; gap: 8px; }
-  .scrapbook-theme .featured-publication { padding: 18px 16px; }
+  .scrapbook-theme .featured-publication, .scrapbook-theme .showcase-entry { grid-template-columns: 1fr; gap: 12px; }
+  .scrapbook-theme .entry-media-placeholder { width: 100%; min-height: 150px; }
 }
