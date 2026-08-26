@@ -1427,7 +1427,22 @@ body.scrapbook-theme::before {
 .scrapbook-theme .profile-note { margin-top: 14px; color: #826f94; font-size: 0.82rem; text-align: center; }
 .scrapbook-theme .profile-sidebar .avatar { object-position: 32% 42%; }
 .scrapbook-theme .profile-links .profile-email::before { content: "✉" !important; }
-.scrapbook-theme .profile-email a { overflow-wrap: anywhere; }
+.scrapbook-theme .profile-email a {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  color: var(--text);
+  overflow-wrap: anywhere;
+}
+.scrapbook-theme .profile-email a:hover {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--link-hover);
+  text-decoration: none;
+}
 .scrapbook-theme .interest-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
 .scrapbook-theme .interest-tags span { border: 1px solid rgba(123, 94, 167, 0.24); border-radius: 999px; background: rgba(123, 94, 167, 0.08); color: #6b4f8a; padding: 5px 11px; font-family: "Space Grotesk", "Noto Sans SC", sans-serif; font-size: 0.78rem; }
 .scrapbook-theme .section-intro, .scrapbook-theme .project-description { color: #6f617c; font-size: 0.9rem; line-height: 1.7; }
