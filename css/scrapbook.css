@@ -816,7 +816,7 @@ body.scrapbook-theme * {
 
 html {
   min-height: 100%;
-  background: #dce8cc url("../assets/anime-forest-bg-mirrored.jpg") center top / cover fixed no-repeat;
+  background: #dce8cc url("../assets/sky.jpg") center top / cover fixed no-repeat;
 }
 
 body.scrapbook-theme::before {
@@ -826,8 +826,10 @@ body.scrapbook-theme::before {
   z-index: -1;
   pointer-events: none;
   background:
-    linear-gradient(90deg, rgba(241, 248, 235, .42), rgba(255, 255, 255, .76) 39%, rgba(255, 255, 255, .92) 100%),
-    url("../assets/anime-forest-bg-mirrored.jpg") center / cover no-repeat;
+    linear-gradient(90deg, rgba(241, 248, 235, .20), rgba(255, 255, 255, .40) 39%, rgba(255, 255, 255, .55) 100%),
+
+/* linear-gradient(90deg, rgba(241, 248, 235, .42), rgba(255, 255, 255, .76) 39%, rgba(255, 255, 255, .92) 100%), */
+    url("../assets/sky.jpg") center / cover no-repeat;
 }
 
 .scrapbook-theme main,
@@ -1079,7 +1081,7 @@ body.scrapbook-theme::before {
   padding: 20px 24px 24px;
   border: 1px solid rgba(218, 226, 220, .75);
   border-radius: 18px;
-  background: rgba(255, 255, 255, .80);
+  background: rgba(255, 255, 255, .80); 
   box-shadow: 0 13px 36px rgba(47, 66, 55, .07);
   backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(7px);
