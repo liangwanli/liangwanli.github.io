@@ -67,7 +67,7 @@
                 </div>
                 <div class="about-copy">
                   <p data-copy="aboutIntro">我目前是华南农业大学人工智能专业的本科生。我的学习与研究训练主要围绕计算机视觉和深度学习展开，希望把可靠、高效的视觉模型应用到真实的农业、医疗与边缘计算场景中。</p>
-                  <p data-copy="aboutResearch">我做过辣椒叶片病害检测、稠密鱼苗计数、脑肿瘤分割、模型校准和水稻病害检测等项目，关注从数据处理、模型设计与训练，到指标评估和结果可视化的完整研究流程。</p>
+                  <p data-copy="aboutResearch">我做过辣椒叶片病害检测、密集鱼苗计数、医学图像分割、模型校准和水稻病害检测等项目，关注从数据处理、模型设计与训练，到指标评估和结果可视化的完整研究流程。</p>
                   <p data-copy="aboutFocus">目前感兴趣的方向包括 <strong>目标检测</strong>、<strong>医学图像分割</strong>、<strong>多模态学习</strong>、<strong>轻量化模型</strong> 与 <strong>边缘智能</strong>。</p>
                   <div class="interest-tags" aria-label="研究兴趣">
                     <span>Computer Vision</span><span>Deep Learning</span><span>Object Detection</span>
@@ -78,21 +78,53 @@
             </section>
 
             <section id="news" class="section news">
+              <img class="section-sticker news-sticker" src="assets/celebrate.gif" alt="庆祝贴纸" />
               <div class="section-heading">
                 <h2 class="section-title" data-copy="newsTitle">最新动态</h2>
               </div>
-              <ul class="news-list">
-                <li class="news-item news-highlight">
+              <div class="news-carousel">
+                <ul class="news-list" aria-live="polite">
+                  <li class="news-item news-highlight" data-news-item>
                   <time datetime="2026-07-19" class="news-date">2026.07.19</time>
                   <div class="news-copy">
-                    <strong data-copy="newsCompetition">🎉 获得中国大学生计算机设计大赛人工智能应用赛道国家级二等奖。</strong>
+                      <strong data-copy="newsCompetition">🎉 获得中国大学生计算机设计大赛人工智能应用赛道国家级二等奖。</strong>
                   </div>
-                </li>
-                <li class="news-item">
-                  <time datetime="2026" class="news-date">2026</time>
-                  <div class="news-copy" data-copy="newsPaper">论文 <em>MSM-Unet</em> 被 IEEE 会议 CITSC 2026 录用（第一作者）。</div>
-                </li>
-              </ul>
+                  </li>
+                  <li class="news-item" data-news-item>
+                    <time datetime="2026-07" class="news-date">2026.07</time>
+                    <div class="news-copy" data-copy="newsAiThird">获得第二十八届中国机器人及人工智能大赛全国总决赛人工智能创新赛国家级三等奖。</div>
+                  </li>
+                  <li class="news-item" data-news-item>
+                    <time datetime="2026-06-17" class="news-date">2026.06.17</time>
+                    <div class="news-copy" data-copy="newsLanqiaoThird">获得第十七届蓝桥杯全国软件和信息技术大赛软件赛 Python 程序设计大学 B 组全国总决赛三等奖。</div>
+                  </li>
+                  <li class="news-item" data-news-item>
+                    <time datetime="2026-04-18" class="news-date">2026.04.18</time>
+                    <div class="news-copy" data-copy="newsPaper">论文 <em>MSM-Unet</em> 被 IEEE 会议 CITSC 2026 录用（第一作者）。</div>
+                  </li>
+                  <li class="news-item" data-news-item>
+                    <time datetime="2026-01-06" class="news-date">2026.01.06</time>
+                    <div class="news-copy" data-copy="newsVolunteer">获评华南农业大学服务十五运会和残特奥会“优秀志愿者”。</div>
+                  </li>
+                  <li class="news-item" data-news-item>
+                    <time datetime="2025-06" class="news-date">2025.06</time>
+                    <div class="news-copy" data-copy="newsYouthLeague">获评华南农业大学 2024-2025 年度“优秀共青团员”。</div>
+                  </li>
+                  <li class="news-item" data-news-item>
+                    <time datetime="2024-12" class="news-date">2024.12</time>
+                    <div class="news-copy" data-copy="newsBayCup">获得“大湾区杯”粤港澳 AI for Science 科技竞赛国家级二等奖。</div>
+                  </li>
+                  <li class="news-item" data-news-item>
+                    <time datetime="2024-12" class="news-date">2024.12</time>
+                    <div class="news-copy" data-copy="newsModeling">获得全国大学生数学建模竞赛广东省二等奖。</div>
+                  </li>
+                </ul>
+                <div class="news-controls" aria-label="动态翻页">
+                  <button class="news-page-button" type="button" data-news-prev aria-label="上一页">←</button>
+                  <span class="news-page-status" aria-live="polite"><span data-news-current>1</span> / <span data-news-total>1</span></span>
+                  <button class="news-page-button" type="button" data-news-next aria-label="下一页">→</button>
+                </div>
+              </div>
             </section>
 
             <section id="publications" class="section">
@@ -102,7 +134,7 @@
                 <div class="entry-media-placeholder" aria-label="论文配图待补充"><span data-copy="paperFigurePending">论文配图待补充</span></div>
                 <div class="pub-content">
                   <p class="pub-title">MSM-Unet: A Mamba-Driven Multi-Scale Pyramid for Medical Image Segmentation</p>
-                  <div class="pub-venue"><span class="pub-venue-tag">IEEE CITSC 2026</span><span class="publication-status" data-copy="accepted">已录用</span></div>
+                  <div class="pub-venue"><span class="pub-venue-tag">IEEE CITSC 2026</span><span class="publication-status" data-copy="acceptedDate">已录用 · 2026.04.18</span></div>
                   <div class="pub-authors"><strong class="author-highlight">Xiaocong Pan</strong> <span data-copy="firstAuthor">（第一作者）</span></div>
                   <p class="pub-desc" data-copy="paperDescription">针对医学图像病灶尺度差异大、形态不规则以及编解码器语义差异问题，提出 MSM-Unet：使用多尺度 Mamba 模块联合建模局部细节和长程依赖，并通过增强型跳跃连接融合浅层边缘与深层语义特征。在 BraTS 数据集上，WT、TC、ET 分割指标均优于 TransUNet 和基准 Mamba 模型。</p>
                   <div class="entry-links"><span class="link-pending" data-copy="paperLinkPending">论文链接待公开后补充</span></div>
@@ -151,10 +183,10 @@
               <h2 class="section-title" data-copy="competitionsTitle">竞赛经历</h2>
               <ul class="competition-list">
                 <li class="competition-item"><div><p data-copy="competition1">中国大学生计算机设计大赛 · 人工智能应用赛道</p><time datetime="2026-07-19">2026.07.19</time></div><strong data-copy="nationalSecond">国家级二等奖</strong></li>
-                <li class="competition-item"><div><p data-copy="competition2">“AI for Science”大湾区杯科技竞赛</p></div><strong data-copy="nationalSecond">国家级二等奖</strong></li>
-                <li class="competition-item"><div><p data-copy="competition3">蓝桥杯全国软件和信息技术大赛软件赛</p></div><strong data-copy="nationalThird">国家级三等奖</strong></li>
-                <li class="competition-item"><div><p data-copy="competition4">中国机器人及人工智能大赛</p></div><strong data-copy="nationalThird">国家级三等奖</strong></li>
-                <li class="competition-item"><div><p data-copy="competition5">全国大学生数学建模竞赛</p></div><strong data-copy="provincialSecond">省级二等奖</strong></li>
+                <li class="competition-item"><div><p data-copy="competition2">“AI for Science”大湾区杯科技竞赛</p><time datetime="2024-12">2024.12</time></div><strong data-copy="nationalSecond">国家级二等奖</strong></li>
+                <li class="competition-item"><div><p data-copy="competition3">蓝桥杯全国软件和信息技术大赛软件赛</p><time datetime="2026-06-17">2026.06.17</time></div><strong data-copy="nationalThird">国家级三等奖</strong></li>
+                <li class="competition-item"><div><p data-copy="competition4">中国机器人及人工智能大赛</p><time datetime="2026-07">2026.07</time></div><strong data-copy="nationalThird">国家级三等奖</strong></li>
+                <li class="competition-item"><div><p data-copy="competition5">全国大学生数学建模竞赛</p><time datetime="2024-12">2024.12</time></div><strong data-copy="provincialSecond">省级二等奖</strong></li>
               </ul>
             </section>
 
@@ -165,6 +197,8 @@
                 <li class="award-item award-featured"><span data-copy="award1">国家奖学金</span><strong data-copy="topOnePercent">前 1%</strong></li>
                 <li class="award-item" data-copy="award2">丁颖奖学金</li>
                 <li class="award-item" data-copy="award3">国家励志奖学金</li>
+                <li class="award-item" data-copy="award4">华南农业大学优秀共青团员</li>
+                <li class="award-item" data-copy="award5">十五运会和残特奥会优秀志愿者</li>
               </ul>
             </section>
           </div>

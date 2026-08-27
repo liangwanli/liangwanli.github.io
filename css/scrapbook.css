@@ -816,7 +816,7 @@ body.scrapbook-theme * {
 
 html {
   min-height: 100%;
-  background: #dce8cc url("../assets/sky.jpg") center top / cover fixed no-repeat;
+  background: #dce8cc url("../assets/red-blue.jpg") center top / cover fixed no-repeat;
 }
 
 body.scrapbook-theme::before {
@@ -826,10 +826,10 @@ body.scrapbook-theme::before {
   z-index: -1;
   pointer-events: none;
   background:
-    linear-gradient(90deg, rgba(241, 248, 235, .20), rgba(255, 255, 255, .40) 39%, rgba(255, 255, 255, .55) 100%),
+    linear-gradient(90deg, rgba(241, 248, 235, .30), rgba(255, 255, 255, .50) 39%, rgba(255, 255, 255, .55) 100%),
 
 /* linear-gradient(90deg, rgba(241, 248, 235, .42), rgba(255, 255, 255, .76) 39%, rgba(255, 255, 255, .92) 100%), */
-    url("../assets/sky.jpg") center / cover no-repeat;
+    url("../assets/red-blue.jpg") center / cover no-repeat;
 }
 
 .scrapbook-theme main,
@@ -1101,7 +1101,8 @@ body.scrapbook-theme::before {
   pointer-events: none;
 }
 
-.scrapbook-theme .publication-sticker {
+.scrapbook-theme .publication-sticker,
+.scrapbook-theme .news-sticker {
   top: -38px;
   right: 20px;
   transform: rotate(4deg);
@@ -1197,6 +1198,58 @@ body.scrapbook-theme::before {
 
 .scrapbook-theme .news-copy {
   min-width: 0;
+}
+
+.scrapbook-theme .news-item[hidden] {
+  display: none;
+}
+
+.scrapbook-theme .news-controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.scrapbook-theme .news-page-button {
+  display: inline-grid;
+  width: 36px;
+  height: 32px;
+  place-items: center;
+  border: 1px solid rgba(123, 94, 167, .28);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .82);
+  color: #6b4f8a;
+  box-shadow: 0 5px 14px rgba(45, 32, 64, .07);
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform .18s ease, border-color .18s ease, background .18s ease;
+}
+
+.scrapbook-theme .news-page-button:hover:not(:disabled) {
+  transform: translateY(-1px);
+  border-color: rgba(123, 94, 167, .55);
+  background: #fff;
+}
+
+.scrapbook-theme .news-page-button:focus-visible {
+  outline: 2px solid rgba(123, 94, 167, .48);
+  outline-offset: 2px;
+}
+
+.scrapbook-theme .news-page-button:disabled {
+  opacity: .38;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.scrapbook-theme .news-page-status {
+  min-width: 42px;
+  color: var(--muted);
+  font-size: .78rem;
+  font-variant-numeric: tabular-nums;
+  text-align: center;
 }
 
 .scrapbook-theme .news-accepted-line {
