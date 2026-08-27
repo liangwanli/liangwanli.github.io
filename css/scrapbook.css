@@ -816,7 +816,7 @@ body.scrapbook-theme * {
 
 html {
   min-height: 100%;
-  background: #dce8cc url("../assets/red-blue.jpg") center top / cover fixed no-repeat;
+  background: #dce8cc url("../assets/sky.jpg") center top / cover fixed no-repeat;
 }
 
 body.scrapbook-theme::before {
@@ -829,7 +829,7 @@ body.scrapbook-theme::before {
     linear-gradient(90deg, rgba(241, 248, 235, .30), rgba(255, 255, 255, .50) 39%, rgba(255, 255, 255, .55) 100%),
 
 /* linear-gradient(90deg, rgba(241, 248, 235, .42), rgba(255, 255, 255, .76) 39%, rgba(255, 255, 255, .92) 100%), */
-    url("../assets/red-blue.jpg") center / cover no-repeat;
+    url("../assets/sky.jpg") center / cover no-repeat;
 }
 
 .scrapbook-theme main,
