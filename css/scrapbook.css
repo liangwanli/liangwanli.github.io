@@ -1101,11 +1101,18 @@ body.scrapbook-theme::before {
   pointer-events: none;
 }
 
-.scrapbook-theme .publication-sticker,
-.scrapbook-theme .news-sticker {
+.scrapbook-theme .publication-sticker {
   top: -38px;
   right: 20px;
   transform: rotate(4deg);
+}
+
+.scrapbook-theme .news-sticker {
+  top: -46px;
+  right: 16px;
+  width: 82px;
+  height: 82px;
+  transform: rotate(2deg);
 }
 
 .scrapbook-theme .project-sticker {
