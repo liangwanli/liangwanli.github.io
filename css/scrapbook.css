@@ -1018,38 +1018,34 @@ body.scrapbook-theme::before {
 }
 
 .scrapbook-theme .icecream-card {
-  width: 108px;
-  margin: 0 0 0 auto;
-  padding: 6px 6px 18px;
-  background: #fff;
-  border: 1px solid #edf0ed;
-  border-radius: 4px;
-  box-shadow: 0 10px 24px rgba(66, 80, 76, .10);
-  transform: rotate(4deg);
+  position: absolute;
+  top: -26px;
+  right: -139px;
+  width: 280px;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  transform: none;
 }
 
 .scrapbook-theme .icecream-card::before {
-  content: "";
-  position: absolute;
-  width: 33px;
-  height: 9px;
-  top: -5px;
-  left: 92px;
-  background: rgba(216, 203, 156, .72);
-  transform: rotate(14deg);
+  content: none;
 }
 
 .scrapbook-theme .icecream-card img {
   display: block;
   width: 100%;
-  aspect-ratio: 1;
-  object-fit: cover;
-  border-radius: 2px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 0;
 }
 
 .scrapbook-theme .sleepy-cat {
   position: absolute;
-  left: -4px;
+  left: -26px;
   bottom: -4px;
   width: 142px;
   filter: drop-shadow(0 8px 9px rgba(56, 67, 61, .13));
@@ -1108,10 +1104,10 @@ body.scrapbook-theme::before {
 }
 
 .scrapbook-theme .news-sticker {
-  top: -46px;
-  right: 16px;
-  width: 82px;
-  height: 82px;
+  top: -20px;
+  right: 6px;
+  width: 110px;
+  height: 110px;
   transform: rotate(2deg);
 }
 
@@ -1336,7 +1332,7 @@ body.scrapbook-theme::before {
   }
 
   .scrapbook-theme .sleepy-cat {
-    width: 126px;
+    width: 135px;
   }
 }
 
