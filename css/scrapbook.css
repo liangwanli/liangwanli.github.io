@@ -1019,8 +1019,8 @@ body.scrapbook-theme::before {
 
 .scrapbook-theme .icecream-card {
   position: absolute;
-  top: -26px;
-  right: -139px;
+  top: -44px;
+  right: -140px;
   width: 280px;
   margin: 0;
   padding: 0;
@@ -1045,9 +1045,9 @@ body.scrapbook-theme::before {
 
 .scrapbook-theme .sleepy-cat {
   position: absolute;
-  left: -26px;
-  bottom: -4px;
-  width: 142px;
+  left: -27px;
+  bottom: -40px;
+  width: 205px;
   filter: drop-shadow(0 8px 9px rgba(56, 67, 61, .13));
   transform: rotate(-3deg);
   transition: transform .22s ease;
@@ -1090,16 +1090,16 @@ body.scrapbook-theme::before {
 .scrapbook-theme .section-sticker {
   position: absolute;
   z-index: 2;
-  width: 68px;
-  height: 68px;
+  width: 110px;
+  height: 110px;
   object-fit: contain;
   filter: drop-shadow(0 7px 9px rgba(40, 55, 47, .12));
   pointer-events: none;
 }
 
 .scrapbook-theme .publication-sticker {
-  top: -38px;
-  right: 20px;
+  top: -29px;
+  right: -2px;
   transform: rotate(4deg);
 }
 
@@ -1120,10 +1120,10 @@ body.scrapbook-theme::before {
 }
 
 .scrapbook-theme .award-sticker {
-  left: -38px;
+  left: -66px;
   top: -36px;
-  width: 72px;
-  height: 72px;
+  width: 87px;
+  height: 87px;
   transform: rotate(-8deg);
 }
 
@@ -1332,7 +1332,7 @@ body.scrapbook-theme::before {
   }
 
   .scrapbook-theme .sleepy-cat {
-    width: 135px;
+    width: 167px;
   }
 }
 
